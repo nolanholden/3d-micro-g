@@ -1,5 +1,8 @@
 # Computational Thermal & Fluid Dynamics Laboratory Micro-Gravity Metal FDM
-Micro-gravity [Metal Fused Deposition Modeling](https://github.com/nolanholden/3d-micro-g/blob/4fd37d409fcfca17d81ec334c00d76ba0316be27/docs/fused-deposition-modeling-of-metals.pdf) (3D metal printing) payload for [Blue Origin](https://www.blueorigin.com/), with the [University of Louisville Computational Thermal & Fluid Dynamics Laboratory](http://yongshenglian.wixsite.com/ctflab)
+Micro-gravity [Metal Fused Deposition Modeling](https://github.com/nolanholden/3d-micro-g/blob/4fd37d409fcfca17d81ec334c00d76ba0316be27/docs/fused-deposition-modeling-of-metals.pdf) (3D metal printing) payload for [Blue Origin](https://www.blueorigin.com/), with the [University of Louisville Computational Thermal & Fluid Dynamics Laboratory](http://yongshenglian.wixsite.com/ctflab).
+
+
+## License Information
 
 As expressed in [this repository's license](https://github.com/nolanholden/3d-micro-g/blob/master/LICENSE), The below terms are an addition to the GNU GPLv3, and all terms here which intersect those in GNU GPLv3 shall be entirely superceding:
 
