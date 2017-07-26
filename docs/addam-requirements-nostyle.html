@@ -1,0 +1,100 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>3dmicrog-addam.md</title><style></style></head><body id="preview">
+<h1><a id="3D_MicroG_Startup_Module_0"></a>3D Micro-G Start-up Module</h1>
+<hr>
+<h2><a id="Abstract_4"></a>Abstract</h2>
+<p>This document is provided as a rough outline of requirements and additional details for the design of the 3D Micro-G module responsible for detecting the host vehicle’s apogee and commencing FDM prints during the target time-interval of flight. The content is ordered as follows:</p>
+<ol>
+<li>Definitions</li>
+<li>Mission Timeline</li>
+<li>ADDAM Requirements and Related Components</li>
+<li>Enumeration of ADDAM Components</li>
+</ol>
+<h2><a id="1_Definitions_12"></a>1. Definitions</h2>
+<ul>
+<li><strong>APW (Apogee Printing-Window)</strong> – the target interval of time after takeoff and before landing during which FDM print(s) are to be performed. (Roughly 5 minutes in length)</li>
+<li><strong>ADDAM (APM Detection and Data-Acquisition Module)</strong> – the module (hardware and software) responsible for detecting the onset (and conclusion) of APW, commencing the FDM print(s), and acquiring various non-critical data throughout flight</li>
+</ul>
+<h2><a id="2_Mission_Timeline_rough_17"></a>2. Mission Timeline (rough)</h2>
+<ol>
+<li>Vehicle launches.</li>
+<li>ADDAM begins sensing for APW onset (and begins all other data-acquisition capabilities.)</li>
+<li>ADDAM detects APW onset.
+<ul>
+<li>ADDAM immediately commences FDM prints.</li>
+</ul>
+</li>
+<li>Prints finalize during APW.</li>
+<li>APW ends.</li>
+<li>Spacecraft returns to Earth.</li>
+</ol>
+<h2><a id="3_ADDAM_Requirements_and_Related_Components_27"></a>3. ADDAM Requirements and Related Components</h2>
+<ul>
+<li>The ADDAM must, requiring no intervention, begin sensing for APW immediately upon power-on. (Power-on must occur prior to APW.)
+<ul>
+<li>Accelerometer to sense APW</li>
+</ul>
+</li>
+<li>The ADDAM may also acquire various environment metrics:
+<ul>
+<li>Visible-light spectrum video
+<ul>
+<li>Visible light spectrum light</li>
+<li>Visible light spectrum camera</li>
+</ul>
+</li>
+<li>Infrared video
+<ul>
+<li>Infrared camera</li>
+</ul>
+</li>
+<li>Magnetic field (potential magnetic interference)
+<ul>
+<li>Magnetometer</li>
+</ul>
+</li>
+<li>“Real-time” timekeeping
+<ul>
+<li>If module is primitive (and time is too unreliable), potentially should be an external clock.</li>
+</ul>
+</li>
+<li>Amperage to and voltage across printer (or entire system)
+<ul>
+<li>Electronically interfaceable ammeter and voltmeter</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Additional, Non-critical metrics
+<ul>
+<li>GPS NMEA sentences (altitude, UTC date-time, satellites tracking, etc.)</li>
+<li>Ambient pressure</li>
+<li>Ambient temperature (unless IR imaging suffices)</li>
+<li>Relative humidity</li>
+</ul>
+</li>
+</ul>
+<h2><a id="4_Enumeration_of_ADDAM_Components_49"></a>4. Enumeration of ADDAM Components</h2>
+<h5><a id="Missioncritical_50"></a>Mission-critical:</h5>
+<ul>
+<li>Power supply</li>
+<li>Accelerometer</li>
+</ul>
+<h5><a id="Noncritical_53"></a>Non-critical:</h5>
+<ul>
+<li>Visible light spectrum light</li>
+<li>Visible light spectrum camera</li>
+<li>Infrared camera</li>
+<li>External clock</li>
+<li>Electronically interfaceable multimeter</li>
+</ul>
+<h5><a id="Very_lowimportance_59"></a>Very low-importance</h5>
+<ul>
+<li>GPS receiver</li>
+<li>Barometer</li>
+<li>Thermometer</li>
+<li>Hygrometer (humidity)</li>
+</ul>
+<hr>
+<p><em>For more information, please contact Nolan Holden at <a href="mailto:nolan.holden@louisville.edu">nolan.holden@louisville.edu</a>.</em></p>
+
+</body></html>
