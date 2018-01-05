@@ -1,5 +1,5 @@
 # 3D MicroG, Computational Thermal & Fluid Dynamics Laboratory Micro-Gravity Metal FDM
-Micro-gravity [Metal Fused Deposition Modeling](https://github.com/nolanholden/3d-micro-g/blob/4fd37d409fcfca17d81ec334c00d76ba0316be27/docs/fused-deposition-modeling-of-metals.pdf) (3D metal printing) NASA payload for [Blue Origin](https://www.blueorigin.com/), with the [University of Louisville Computational Thermal & Fluid Dynamics Laboratory](http://yongshenglian.wixsite.com/ctflab).
+Micro-gravity [Metal Fused Deposition Modeling](https://github.com/nolanholden/3d-micro-g/blob/4fd37d409fcfca17d81ec334c00d76ba0316be27/docs/fused-deposition-modeling-of-metals.pdf) NASA additive manufacturing [Blue Origin](https://www.blueorigin.com/) rocket payload, with the [University of Louisville Computational Thermal & Fluid Dynamics Laboratory](http://yongshenglian.wixsite.com/ctflab).
 
 
 # 3D MicroG Start-up Module
